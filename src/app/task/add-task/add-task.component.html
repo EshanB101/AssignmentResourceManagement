@@ -1,0 +1,28 @@
+<div class="container">
+  <form id="myForm" #f="ngForm" (ngSubmit)="onAdd(f)">
+    <mat-form-field appearance="fill">
+      <mat-label>Employees</mat-label>
+      <mat-select name="name" ngModel>
+        <mat-option
+          [value]="employee.name"
+          *ngFor="let employee of employees"
+          >{{ employee.name }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Task</mat-label>
+      <input matInput name="task" ngModel />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Choose due date</mat-label>
+      <input matInput [matDatepicker]="picker" name="date" ngModel />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button color="primary">Assign Task</button>
+    <a id="view" href="users">VIEW TASK</a>
+  </form>
+</div>

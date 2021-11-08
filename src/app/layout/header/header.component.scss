@@ -1,0 +1,26 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    font-size: 1.2rem;
+  }
+  .mat-icon {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mat-toolbar {
+    width: 700px;
+  }
+}

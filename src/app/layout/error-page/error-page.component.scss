@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #2980b9,
+    #6dd5fa,
+    #ffffff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  .error {
+    display: flex;
+
+    #error-title {
+      font-size: 7rem;
+      padding: 0 10px;
+    }
+  }
+  h1 {
+    font-size: 3rem;
+    font-family: "Courgette", cursive;
+    line-height: 5rem;
+  }
+}

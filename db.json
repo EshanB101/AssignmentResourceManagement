@@ -1,0 +1,45 @@
+{
+  "userList": [
+    {
+      "id": 1,
+      "name": "Employee 1",
+      "task": "Random Task 1",
+      "completed": false,
+      "date": "10-10-21"
+    },
+    {
+      "id": 2,
+      "name": "Employee 2",
+      "task": "Random Task 2",
+      "completed": false,
+      "date": "10-10-21"
+    },
+    {
+      "id": 3,
+      "name": "Employee 3",
+      "task": "Random Task 3",
+      "completed": true,
+      "date": "10-10-21"
+    },
+    {
+      "id": 4,
+      "name": "Employee 4",
+      "task": "Random Task 4",
+      "completed": false,
+      "date": "10-10-21"
+    },
+    {
+      "id": 5,
+      "name": "Employee 5",
+      "task": "Random Task 5",
+      "completed": true,
+      "date": "10-10-21"
+    },
+    {
+      "name": "Employee 5",
+      "task": "Test Task 1",
+      "date": "2021-11-29T18:00:00.000Z",
+      "id": 6
+    }
+  ]
+}
