@@ -5,7 +5,7 @@ export interface Tasks{
   id: number;
   name: string;
   task: string;
-  status: any;
+  status: boolean;
   date: any;
   
 }
@@ -21,7 +21,8 @@ const ELEMENT_DATA: Tasks[] = [];
 export class ViewTaskComponent implements OnInit {
 
   listTasks: Tasks[] = [];
-  
+  userId:string;
+
   displayedColumns: string[] = ['id', 'name', 'task', 'status', 'date', 'delete'];
   dataSource = ELEMENT_DATA;
 
@@ -34,11 +35,14 @@ export class ViewTaskComponent implements OnInit {
       })
   }
 
-  onDelete(obj){
-   this.listTasks = this.listTasks.filter((val,index)=>{
-     return val.id != obj.id;
-   })
-    
+  onDelete(id){
+  
+    this.todoService.deleteTask(id)
+    .subscribe(data=>  this.ngOnInit())
+
+    // this.listTasks = this.listTasks.filter((val,index)=>{
+    //   return val.id != id.id;
+    // })
    }
 
 }

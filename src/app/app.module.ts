@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 //From Layout
 import { LayoutModule } from './layout/layout.module';
 import { TaskModule } from './task/task.module';
+import { TodosService } from './service/todos.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { TaskModule } from './task/task.module';
 
     
   ],
-  providers: [],
+  providers: [TodosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -21,7 +21,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTableModule} from '@angular/material/table';
 import { TaskModule } from '../task/task.module';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -46,6 +46,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatTableModule,
     TaskModule,
     MatProgressSpinnerModule,
+    MatCardModule,
   ],
 
   exports: [

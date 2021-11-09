@@ -1,24 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+//vars
 $font-home: "Cabin", sans-serif;
-
+$bg-color: linear-gradient(to top, #4ca1af, #c4e0e5);
+// linear-gradient(to top, #fffbd5, #b20a2c);
 .outer-div {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(
-    to right,
-    #56ccf2,
-    #2f80ed
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: $bg-color;
 }
 
 .container {
-  width: 80%;
-  height: 300px;
+  min-height: 300px;
   padding: 20px;
-  border: 2px solid rgb(24, 27, 238);
+  border: 2px solid #1e1964;
   border-radius: 30px;
+  color: #58539b;
 }
 #title {
   font-family: $font-home;
@@ -29,7 +26,6 @@ $font-home: "Cabin", sans-serif;
 
 .row2 {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   height: 200px;
   margin-top: -50px;
@@ -37,12 +33,13 @@ $font-home: "Cabin", sans-serif;
 .panel {
   width: 300px;
   max-height: 100px;
-  text-align: center;
 
+  a {
+    margin-left: 80px;
+  }
   p {
     font-size: 2rem;
-    margin-top: 30px;
-    margin-left: 100px;
+    text-align: center;
     font-weight: bold;
     font-family: $font-home;
     line-height: 1.6rem;
@@ -51,12 +48,56 @@ $font-home: "Cabin", sans-serif;
 
 .mat-icon {
   font-size: 8rem;
+  color: #58539b;
 
   &:hover {
     transform: scale(1.1);
-    color: rgb(77, 8, 77);
+    color: #534bc5;
   }
 }
+
+//FOR THE WAVE PATTERN [Used https://www.shapedivider.app/]
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 217px;
+}
+
+.wave .shape-fill {
+  fill: #58539b;
+}
+
+.custom-shape-divider-top-1636437379 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1636437379 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 132px;
+}
+
+.custom-shape-divider-top-1636437379 .shape-fill {
+  fill: #534bc5;
+}
+//
 
 @media only screen and (max-width: 700px) {
   .container {
@@ -65,16 +106,15 @@ $font-home: "Cabin", sans-serif;
   }
 
   .row2 {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    margin-top: 200px;
 
-    margin-top: 50px;
     .panel {
       padding: 100px;
       margin: 40px 90px 0 0;
 
       p {
-        margin-left: 60px;
+        margin-left: 90px;
         margin-top: -2px;
       }
     }

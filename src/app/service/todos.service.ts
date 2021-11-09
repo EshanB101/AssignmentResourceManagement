@@ -8,7 +8,11 @@ import { Tasks } from '../task/view-task/view-task.component';
 })
 export class TodosService {
 
+  task: Tasks[];
+  
+
   public baseUrl: string = 'http://localhost:3000/';
+  
   
   constructor(private _http:HttpClient) { }
 
@@ -17,10 +21,10 @@ export class TodosService {
   }
 
   addTask(form){
-   return this._http.post<Task[]>(this.baseUrl + 'userList', form.value)
+   return this._http.post<Tasks[]>(this.baseUrl + 'userList', form.value)
   }
 
-  // deleteTask(){
-  //  return this._http.get<Task[]>(this.baseUrl + 'userList')
-  // }
+  deleteTask(id){
+   return this._http.delete<Task[]>(this.baseUrl +'userList/' + id)   
+  }
 }

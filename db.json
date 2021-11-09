@@ -34,12 +34,6 @@
       "task": "Random Task 5",
       "completed": true,
       "date": "10-10-21"
-    },
-    {
-      "name": "Employee 5",
-      "task": "Test Task 1",
-      "date": "2021-11-29T18:00:00.000Z",
-      "id": 6
     }
   ]
 }

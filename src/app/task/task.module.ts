@@ -17,6 +17,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTableModule} from '@angular/material/table';
 import { ViewTaskComponent } from './view-task/view-task.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS} from '@angular/material/snack-bar';
+
 
 @NgModule({
   declarations: [
@@ -38,11 +40,18 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatToolbarModule,
     MatTableModule,
     MatCheckboxModule,
+    MatSnackBarModule
   ],
 
   exports: [
     AddTaskComponent,
     ViewTaskComponent
+  ],
+
+  providers: [
+    {
+      provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue:{duration: 2000}
+    }
   ]
 })
 export class TaskModule { }
