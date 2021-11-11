@@ -16,6 +16,8 @@ $bg-color: linear-gradient(to top, #4ca1af, #c4e0e5);
   border: 2px solid #1e1964;
   border-radius: 30px;
   color: #58539b;
+
+  z-index: 1000;
 }
 #title {
   font-family: $font-home;
@@ -43,6 +45,7 @@ $bg-color: linear-gradient(to top, #4ca1af, #c4e0e5);
     font-weight: bold;
     font-family: $font-home;
     line-height: 1.6rem;
+    z-index: 10;
   }
 }
 
