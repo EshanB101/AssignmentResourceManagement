@@ -16,6 +16,9 @@ Mock server format
   
 Data on view. 
 ![view](https://user-images.githubusercontent.com/87816481/141360451-ae897439-d08b-46f1-97c0-8fe0d1b34511.PNG)
+  
+Add data  
+![task](https://user-images.githubusercontent.com/87816481/141361030-6c3e6da1-c30a-4b7a-b001-00f1f36b11e3.PNG)
 
 ## Info
 Attempt at Angular Framework. For assignment! 
