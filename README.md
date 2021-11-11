@@ -10,7 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   -`json-server --watch db.json` to run database server  
 -SASS
 
-## Notes;
+## Info
 Mock server format  
 ![server](https://user-images.githubusercontent.com/87816481/141360596-42a4409c-4dfe-42cb-a000-9567ef98428e.PNG)  
   
@@ -23,9 +23,7 @@ Add data
 ## Info
 Attempt at Angular Framework. For assignment! 
 
-## Contacts
-Eshan Basnet  
-17859851
+
 
 
 
