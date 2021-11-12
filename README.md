@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   -`npm install -g json-server`to install json Server   
   -`https://www.npmjs.com/package/json-server` for json server reference  
   -`json-server --watch db.json` to run database server  
--SASS
+-SCSS
 
 ## Info
 Mock server format  
